@@ -66,8 +66,6 @@ with a full admin panel at `/admin`.
 
    To make it work:
    - In the Supabase dashboard, go to **Authentication → Users → Add user**
-   - Email: `irfath@meridianbuilders.com`
-   - Password: `Irfath@98`
    - That's it — the login page maps the username "irfath" to this email
      automatically. You can change the email in
      `src/pages/admin/AdminLogin.jsx` (the `ADMIN_EMAIL` constant) if you'd
