@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-concrete: #dcd8ce;
+  --color-ink: #1c1b19;
+  --color-steel: #3d5a73;
+  --color-amber: #e8862b;
+  --color-paper: #fafaf8;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-paper text-ink font-body antialiased;
+}
+
+::selection {
+  @apply bg-steel text-paper;
+}
+
+.blueprint-line {
+  stroke: #3d5a73;
+  stroke-width: 1.2;
+  fill: none;
+  vector-effect: non-scaling-stroke;
+}
+
+.input {
+  @apply w-full border border-ink/20 bg-paper px-4 py-3 font-body text-ink outline-none focus:border-steel;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 32s linear infinite;
+}
+
+.rte-content:empty:before {
+  content: attr(data-placeholder);
+  color: rgb(28 27 25 / 0.35);
+}
+
+.rte-content h2,
+.rte-article h2 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-ink);
+}
+
+.rte-content h3,
+.rte-article h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-ink);
+}
+
+.rte-content p,
+.rte-article p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+
+.rte-content ul,
+.rte-article ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.rte-content ol,
+.rte-article ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.rte-content blockquote,
+.rte-article blockquote {
+  border-left: 2px solid var(--color-steel);
+  padding-left: 1rem;
+  font-style: italic;
+  color: rgb(28 27 25 / 0.7);
+  margin-bottom: 1rem;
+}
+
+.rte-content a,
+.rte-article a {
+  color: var(--color-steel);
+  text-decoration: underline;
+}
+
+.rte-content img,
+.rte-article img {
+  max-width: 100%;
+  height: auto;
+  margin: 1rem 0;
+  display: block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

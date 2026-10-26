@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" fill="none">
+  <rect width="800" height="500" fill="#dcd8ce"/>
+  <g stroke="#3d5a73" stroke-opacity="0.18" stroke-width="1">
+    <path d="M0 50h800M0 100h800M0 150h800M0 200h800M0 250h800M0 300h800M0 350h800M0 400h800M0 450h800"/>
+    <path d="M50 0v500M100 0v500M150 0v500M200 0v500M250 0v500M300 0v500M350 0v500M400 0v500M450 0v500M500 0v500M550 0v500M600 0v500M650 0v500M700 0v500M750 0v500"/>
+  </g>
+  <g fill="none" stroke="#3d5a73" stroke-width="2.2" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M180 360h440v-40H180z"/>
+    <path d="M210 320h80v-90h-80z"/>
+    <path d="M320 320h160v-140H320z"/>
+    <path d="M510 320h80v-70h-80z"/>
+    <path d="M300 180l100-70 100 70"/>
+    <path d="M250 230h40M250 250h40M250 270h40"/>
+    <path d="M350 220h100M350 250h100M350 280h100"/>
+    <path d="M530 270h40M530 290h40"/>
+    <rect x="385" y="255" width="30" height="65"/>
+  </g>
+  <circle cx="400" cy="250" r="6" fill="#e8862b"/>
+  <text x="400" y="430" text-anchor="middle" fill="#3d5a73" font-family="IBM Plex Mono, monospace" font-size="14" letter-spacing="4">SERVICE</text>
+</svg>
